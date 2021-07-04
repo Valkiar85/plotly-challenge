@@ -3,7 +3,7 @@ function init(){
     // Dropdown in HTML
     var menu_dropdown = d3.select("#selDataset")
     //JSON Data
-    d3.json("data/samples.json").then(data => {
+    d3.json("samples.json").then(data => {
         console.log(data)
 
         var name_id = data.names;
@@ -24,7 +24,7 @@ function optionChanged(id){
 
 function plot_build(id) {
     //JSON Data
-    d3.json("data/samples.json").then(function(data){
+    d3.json("samples.json").then(function(data){
         console.log(data)
         //Samples
         var sample = data.samples;
